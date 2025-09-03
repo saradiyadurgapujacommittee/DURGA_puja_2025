@@ -879,6 +879,105 @@ footer {
 .contact-list .fa-instagram {
     color: #ff0000; /* Official Instagram color */
 }
+
+
+/* ============================ */
+/* DONATION PAGE STYLES         */
+/* ============================ */
+
+.donation-appeal {
+    text-align: center;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.donation-appeal h2 {
+    font-size: 2.2rem;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.donation-appeal p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #948c8c;
+}
+
+.donation-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.donation-method-box {
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 2.5rem;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.donation-method-box i {
+    font-size: 3rem;
+    color: #ffe600;
+    margin-bottom: 1rem;
+}
+
+.donation-method-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--white-color);
+}
+
+.donation-method-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.qr-code-container {
+    margin: 1.5rem 0;
+}
+
+.qr-code-container img {
+    max-width: 200px;
+    height: auto;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.upi-id {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+}
+
+.bank-details {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.bank-details li {
+    padding: 0.8rem;
+    border-bottom: 1px solid #eee;
+    color: #ffffff;
+}
+
+.bank-details li:last-child {
+    border-bottom: none;
+}
+
+.bank-details li strong {
+    color: var(--white-color);
+}
+
+
 /* --- Mobile Responsiveness --- */
 @media (max-width: 900px) {
     .contact-layout {
@@ -891,6 +990,9 @@ footer {
    
     aspect-ratio: 9/16; /* Gives items a consistent shape */
 }
+.donation-methods {
+        grid-template-columns: 1fr; /* Stack the boxes on mobile */
+    }
 }
 
 /* --- Mobile Responsiveness --- */
