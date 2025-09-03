@@ -1,0 +1,1012 @@
+/* General Styling & Variables */
+:root {
+    --primary-color: #eeff00; /* A deep red for headings and accents */
+    --secondary-color: #ff0707; /* A golden yellow for highlights */
+    --dark-color: #000000; /* For text */
+    --light-color: #f4f4f4; /* For backgrounds */
+    --white-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--dark-color);
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: var(--dark-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-branding {
+    display: flex; /* Helps with vertical alignment */
+    align-items: center;
+    text-decoration: none; /* Keeps the link from being underlined */
+}
+.nav-branding img {
+    height: 70px; /* Adjust this value to make your logo bigger or smaller */
+    width: 70px;  /* Keeps the logo's proportions correct */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--dark-color);
+    
+    transition: all 0.3s ease-in-out;
+}
+
+/* Main Hero Section (Homepage) */
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 2.5rem;
+}
+
+.hero-button {
+    display: inline-block;
+    background-image: linear-gradient(45deg, var(--primary-color), #f56e6e);
+    color: var(--white-color);
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(211, 47, 47, 0.4);
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(211, 47, 47, 0.5);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: #cdb8b8;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 3px solid var(--primary-color);
+}
+
+/* style.css */
+/* Stats Counter Section */
+/* ============================ */
+/* NEW HOMEPAGE SECTIONS STYLES */
+/* ============================ */
+
+/* --- Milestone Section (50 Years) --- */
+.milestone-section {
+    padding: 4rem 1.5rem;
+    background-color: #000000;
+}
+
+.milestone-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.milestone-text {
+    flex: 1; /* Allows text to take available space */
+    max-width: 600px;
+}
+
+.milestone-text .section-title {
+    text-align: left; /* Align title to the left */
+    color: #ffffff;
+}
+
+.milestone-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fffdfd;
+    margin-bottom: 2rem;
+}
+
+.milestone-image {
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+.milestone-image img {
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+/* --- Sponsor Invite Section --- */
+.sponsor-invite-section {
+    padding: 4rem 1.5rem;
+    background-color: var(--dark-color); /* A slightly different background to stand out */
+    text-align: center;
+}
+
+.sponsor-invite-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.sponsor-invite-content .section-title {
+    margin-bottom: 1.5rem;
+    color: #f7f7f7;
+}
+
+.sponsor-invite-content p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+
+
+/* ============================ */
+/* NEW HERO SPLIT SECTION STYLES */
+/* ============================ */
+
+.new-hero-split {
+    min-height: 80vh; /* Minimum height for the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color); /* Light background for contrast */
+    padding: 4rem 2rem;
+    gap: 3rem; /* Space between image and text */
+    max-width: 1400px; /* Limit overall width */
+    margin: auto;
+}
+
+.hero-left {
+    flex: 1; /* Takes up available space */
+    display: flex; /* For centering the image */
+    justify-content: flex-end; /* Pushes image to the right within its flex container */
+    align-items: center;
+    max-width: 50%; /* Image column max width */
+}
+
+.durga-hero-image {
+    max-width: 100%; /* Ensures image is responsive */
+    height: auto;
+    max-height: 800px; /* Limit image height */
+    border-radius: 10px; /* Slight rounding for the image */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Soft shadow */
+    animation: slideInLeft 1s ease-out; /* Animation for the image */
+}
+
+.hero-right {
+    flex: 1; /* Takes up available space */
+    text-align: left; /* Text aligned to the left */
+    max-width: 50%; /* Text column max width */
+    padding: 1rem;
+    animation: slideInRight 1s ease-out; /* Animation for the text */
+}
+
+.committee-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.estd {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.main-headline {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color); /* Primary color for highlight */
+}
+
+.invitation-text {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+
+/* --- Mobile Responsiveness for new Hero Split --- */
+@media (max-width: 900px) {
+    .new-hero-split {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+    }
+    .hero-left, .hero-right {
+        max-width: 100%; /* Allow full width on mobile */
+        justify-content: center; /* Center image horizontally */
+        text-align: center; /* Center text horizontally */
+    }
+    .main-headline {
+        font-size: 2.5rem;
+    }
+    .committee-name {
+        font-size: 2rem;
+    }
+    .durga-hero-image {
+        max-height: 400px; /* Adjust image size for mobile */
+    }
+}
+
+
+
+/* ============================ */
+/* SHLOK GENERATOR STYLES       */
+/* ============================ */
+
+.shlok-section {
+    padding: 4rem 1.5rem;
+    background-color: #000000; /* A clean background */
+    text-align: center;
+}
+
+.shlok-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* We can reuse the .section-title class we already have */
+
+.shlok-display-box {
+    min-height: 100px; /* Ensures the box doesn't collapse */
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: #efdf79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shlok-display {
+    font-family: 'Georgia', serif; /* A more traditional font for shloks */
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+#generate-shlok-btn {
+    /* This button reuses the .hero-button style, no new CSS needed unless you want to change it */
+    margin-top: 1rem;
+}
+
+/* --- Mobile Responsiveness --- */
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--dark-color);
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stat-item p {
+    font-size: 1.1rem;
+    color: var(--white-color);
+}
+
+/* style.css */
+/* Page Header for sub-pages */
+.page-header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #333511;
+}
+.page-header h1 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+}
+.page-header p {color: #fff;
+
+}
+
+/* Photo Gallery Grid */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Lightbox Styling */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    animation: zoomIn 0.3s ease;
+}
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@keyframes zoomIn {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+/* style.css */
+/* Sponsorship Tiers */
+.sponsorship-tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+.tier {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.tier:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.tier h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.tier .price { font-size: 2.5rem; font-weight: 700; color: #ff0000; margin-bottom: 1.5rem; }
+.tier ul { list-style: none; margin-bottom: 2rem; }
+.tier ul li { padding: 0.5rem 0; }
+.tier-button { display: block; background-color:#a72424; color: white; padding: 1rem; text-decoration: none; border-radius: 5px; font-weight: 600; transition: background-color 0.3s; }
+.tier-button:hover { background-color: #a72424; }
+.tier.popular { border: 2px solid #ff0000; position: relative; }
+.popular-tag { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: #ff0000; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 700; }
+
+/* ============================ */
+/* HISTORY PAGE STYLES - FINAL  */
+/* ============================ */
+
+.history-text-with-images {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-align: justify;
+}
+
+/* This is a clearfix to contain the floated images */
+.history-text-with-images::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.history-text-with-images p {
+    margin-bottom: 1.8rem;
+}
+
+.history-image {
+    width: 500px; /* Adjust size as needed */
+    height: auto;
+    
+}
+
+.float-left {
+    float: left;
+    margin-right: 1.5rem; /* Space between image and text */
+    margin-bottom: 1rem;  /* Space below the image */
+}
+
+.float-right {
+    float: right;
+    margin-left: 1.5rem;  /* Space between image and text */
+    margin-bottom: 1rem;   /* Space below the image */
+}
+/* ======================================= */
+/* 50th YEAR SPECIAL PAGE STYLES - UPDATED */
+/* ======================================= */
+
+.schedule-section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.intro-text, .closing-text {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+.closing-text {
+    margin-top: 3rem;
+    font-weight: 600;
+}
+
+
+.event-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+
+
+
+
+
+.event-details h3 {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    margin-bottom: 0.5rem;
+}
+
+.event-details p {
+    line-height: 1.7;
+    color: #f7f7f7;
+}
+/* ======================================= */
+/* 50th YEAR PAGE STYLES - WITH PHOTOS     */
+/* ======================================= */
+
+.schedule-section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 4rem; /* More space before the timeline starts */
+    color: #fff3f3;
+}
+
+.event-list {
+    position: relative;
+}
+
+
+
+.event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    width: 100%;
+    position: relative;
+}
+
+.event-content {
+    width: 45%; /* Each side takes up part of the container */
+    padding: 100px;
+    display: flex;
+    gap: 1rem;
+}
+
+.event-photo {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    overflow: hidden; /* Ensures image fits the border-radius */
+    margin: 10px 200px;
+    
+}
+
+.event-photo img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+    
+}
+
+.event-photo img:hover {
+    transform: scale(1.35);
+}
+
+/* Alternating layout */
+.event-item:nth-child(even) .event-content {
+    order: 2; /* Moves the text content to the right */
+    text-align: right;
+}
+.event-item:nth-child(even) .event-photo {
+    order: 1; /* Moves the photo to the left */
+}
+
+.event-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.event-details h3 {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    margin-bottom: 0.5rem;
+}
+
+.event-details p {
+    line-height: 1.7;
+    color: #c3c3c3;
+    text-align: left; /* Keep text itself left-aligned for readability */
+}
+.event-item:nth-child(even) .event-details p {
+    text-align: right;
+}
+/* ============================ */
+/* GALLERY PAGE STYLES          */
+/* ============================ */
+/* ======================================= */
+/* GALLERY PAGE STYLES - WITH CAPTIONS     */
+/* ======================================= */
+.gallery-item.caption-visible .gallery-caption {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Add this new rule for the caption */
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); /* Gradient for smooth look */
+    color: white;
+    padding: 20px 15px 15px;
+    
+    /* Initially hidden and will slide in */
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-caption p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Make the caption appear on hover */
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    aspect-ratio: 1/1; /* Gives items a consistent shape */
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Video Specific Styles */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Allows clicks to go through to the video */
+}
+
+.gallery-item[data-type="video"]:hover .video-overlay {
+    opacity: 0;
+}
+
+/* Hides the overlay when video is playing (class added by JS) */
+.gallery-item.is-playing .video-overlay {
+    opacity: 0;
+}
+
+/* You should already have lightbox styles, but ensure they are present */
+.lightbox {
+    display: none;
+    /* ... other lightbox styles ... */
+}
+
+
+/* ============================ */
+/* CONTACT PAGE STYLES          */
+/* ============================ */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Contact Form Styling */
+.contact-form-container h3,
+.contact-details-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--white-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #f7f7f7;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.submit-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #a72424; /* Darker red */
+}
+
+
+/* Contact Details Styling */
+.contact-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.contact-list i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.contact-list p {
+    margin: 0;
+    line-height: 1.6;
+    color: #f7f7f7;
+}
+
+/* Map Container */
+.map-container {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
+
+/* style.css */
+
+/* Add this at the end of the Contact Page Styles section */
+
+.contact-list a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: var(--primary-color);
+}
+
+.contact-list .fa-instagram {
+    color: #ff0000; /* Official Instagram color */
+}
+/* --- Mobile Responsiveness --- */
+@media (max-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+    .contact-details-container {
+        order: -1; /* Move the contact details above the form on mobile */
+    }
+    .gallery-item {
+   
+    aspect-ratio: 9/16; /* Gives items a consistent shape */
+}
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 600px) {
+    .history-image {
+        float: none; /* Stop floating on small screens */
+        display: block; /* Make the image a block element */
+        margin: 2rem auto; /* Center the image with space around it */
+        width: 80%; /* Make images larger on mobile */
+        max-width: 300px;
+    }
+    .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+  .gallery-item {
+   
+    aspect-ratio: 9/16; /* Gives items a consistent shape */
+}
+ #shlok-display {
+        font-size: 1.2rem;
+    }
+    .main-headline {
+        font-size: 2rem;
+    }
+    .committee-name {
+        font-size: 1.8rem;
+    }
+    .invitation-text {
+        font-size: 1rem;
+    }
+}
+
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .event-list::before {
+        left: 20px; /* Move timeline bar to the left */
+    }
+    .event-item,
+    .event-item:nth-child(even) {
+        flex-direction: column; /* Stack everything vertically */
+    }
+    .event-content,
+    .event-photo,
+    .event-item:nth-child(even) .event-content,
+    .event-item:nth-child(even) .event-photo {
+        width: 80%; /* Make everything full width */
+        order: 0 !important; /* Reset the order */
+        text-align: left !important;
+    }
+    .event-details p,
+    .event-item:nth-child(even) .event-details p {
+        text-align: left !important;
+    }
+    .event-photo {
+        margin-top: 1rem;
+        border-radius: 10px; 
+    }
+    .event-content {
+        padding-left: 40px; /* Space for the timeline bar */
+        position: relative;
+    }
+    
+
+    .hamburger {
+        display: block;
+        background-color: #f7f7f7;
+        border-radius: 2%;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px; /* Adjust based on navbar height */
+        flex-direction: column;
+        background-color: #000000;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        padding: 1.5rem 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+  .gallery-item {
+   
+    aspect-ratio: 9/16; /* Gives items a consistent shape */
+}
+ .milestone-content {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+    }
+    .milestone-text .section-title {
+        text-align: center; /* Center title on mobile */
+    }
+}
