@@ -237,11 +237,18 @@ if (shlokDisplay && generateShlokBtn) {
 
     // A list of shloks. You can add as many as you want!
     const shloks = [
-        "Ya Devi Sarva-Bhuteshu, Shakti-Rupena Samsthita, Namas-Tasyai Namas-Tasyai, Namas-Tasyai Namo Namah.",
-        "Sarva-Mangala-Mangalye, Shive Sarvartha-Sadhike, Sharanye Tryambake Gauri, Narayani Namo-Stu-Te.",
-        "Om Jayanti Mangala Kali, Bhadrakali Kapalini, Durga Kshama Shiva Dhatri, Svaha Svadha Namo-Stu-Te.",
-        "Durge Smrita Harasi Bhitim-Ashesha-Jantoh, Svasthaih Smrita Matim-Ativa-Shubham Dadasi.",
-        "Sharanagata-Dinarta-Paritrana-Parayane, Sarvasyarti-Hare Devi, Narayani Namo-Stu-Te."
+        "सर्वमङ्गलमङ्गल्ये शिवे सर्वार्थसाधिके ।\n शरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते ॥",
+        "शरणागतदीनार्तपरित्राणपरायणे ।\n सर्वस्यार्तिहरे देवि नारायणि नमोऽस्तु ते ॥",
+        "सर्वस्वरूपे सर्वेशे सर्वशक्तिसमन्विते ।\n भयेभ्यस्त्राहि नो देवि दुर्गे देवि नमोऽस्तु ते ॥",
+        "या देवी सर्वभूतेषु विष्णुमायेति शब्दिता ।\n नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥",
+        "या देवी सर्वभूतेषु बुद्धिरूपेण संस्थिता ।\n नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥	",
+        "या देवी सर्वभूतेषु निद्रारूपेण​ संस्थिता ।\n नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥",
+        "या देवी सर्वभूतेषु क्षुधारूपेण​​ संस्थिता ।\n नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥",
+        "या देवी सर्वभूतेषु छायारूपेण​​​ संस्थिता ।\n नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥",
+        "या देवी सर्वभूतेषु क्षान्तिरूपेण​​​​ संस्थिता।\n नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥",
+        "या देवी सर्वभूतेषु लक्ष्मीरूपेण​​​​ संस्थिता।\n नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥",
+
+        
     ];
 
     // Function to generate and display a random shlok
