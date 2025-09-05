@@ -340,7 +340,7 @@ footer {
 
 .shlok-display-box {
     min-height: 100px; /* Ensures the box doesn't collapse */
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 2rem 0;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
